@@ -4,37 +4,22 @@
 
   <script type="text/javascript">
   var p = {
-      // VALUE OF THE CLIENT'S BASKET
-      item_value: 99.99,
-      // UNIQUE ID FOR THIS ORDER
-      item_uid: "123456789",
-      // UNIQUE ID FOR THE CLIENT
-      user_uid: "123456789",
-      // CLIENT'S E-MAIL
-      email: "test@example.com",
-      // CLIENT'S FIRST NAME
-      first_name: "Test",
-      // CLIENT'S LAST NAME
-      last_name: "Test",
-      // A-B SEGMENT - do not modify
-      segment: "A",
-      // CLIENT'S LANGUAGE (2 lowercase letters : fr, nl, en, it, de, ...)
-      language: "en",
-      // CONTENT OF THE ORDER
-      cart : [
+      item_value: 99.99, // value of the client's basket
+      item_uid: "123456789", // unique id for this order
+      user_uid: "123456789", // unique id for the client
+      email: "test@example.com", // client's e-mail
+      first_name: "Test", // client's first name
+      last_name: "Test", // client's last name
+      segment: "A", // a-b segment - do not modify
+      language: "en", // client's language (2 lowercase letters : fr, nl, en, it, de, ...)
+      cart : [ // content of the order
         {
-        // PAID PRICE FOR THE ITEM (DECIMAL NUMBER)
-        "price": 99.99,
-        // QUANTITY FOR THIS ITEM
-        "quantity": 1,
-        // UNIQUE ID FOR THIS ITEM
-        "product_id": 123456789,
-        // MANUFACTURER ID FOR THIS ITEM
-        "manufacturer_id": 123456789,
-        // CATEGORY ID FOR THIS ITEM
-        "category_id": 123456789,
-        // YOU CAN ADD ANY OTHER FIELD BELOW (E.G. TAGS, PRODUCT'S NAME, ...)
-        "ANY_FIELD_HERE": 123456789
+        "price": 99.99, // paid price for the item (decimal number)
+        "quantity": 1, // quantity for this item
+        "product_id": 123456789, // unique id for this item
+        "manufacturer_id": 123456789, // manufacturer id for this item
+        "category_id": 123456789, // category id for this item
+        "ANY_FIELD_HERE": 123456789 // you can add any other field (e.g. tags, product's name, ...)
         }
       ]
   };
