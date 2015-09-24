@@ -3,13 +3,16 @@
   <div id="lcframe"></div>
 
   <script type="text/javascript">
-  var p = {
-      item_value: 99.99, // value of the client's basket
+  var _lcdata = {
+      item_value: 99.99, // total value of the client's basket
       item_uid: "123456789", // unique id for this order
       user_uid: "123456789", // unique id for the client
       email: "test@example.com", // client's e-mail
-      first_name: "Test", // client's first name
-      last_name: "Test", // client's last name
+      firstname: "Test", // client's first name
+      lastname: "Test", // client's last name
+      payment_method: "VISA", // payment method used by the client
+      shipping_value: 6.50, // value of the shipping
+      discount: 0.0, // value of any discount applied
       segment: "A", // a-b segment - do not modify
       language: "en", // client's language (2 lowercase letters : fr, nl, en, it, de, ...)
       cart : [ // content of the order
@@ -18,8 +21,14 @@
         "quantity": 1, // quantity for this item
         "product_id": 123456789, // unique id for this item
         "manufacturer_id": 123456789, // manufacturer id for this item
-        "category_id": 123456789, // category id for this item
-        "ANY_FIELD_HERE": 123456789 // you can add any other field (e.g. tags, product's name, ...)
+        "category_id": 123456789 // category id for this item
+        },
+        {
+        "price": 14.00, // paid price for the item (decimal number)
+        "quantity": 2, // quantity for this item
+        "product_id": 16549, // unique id for this item
+        "manufacturer_id": 4634789, // manufacturer id for this item
+        "category_id": 5568789 // category id for this item
         }
       ]
   };
